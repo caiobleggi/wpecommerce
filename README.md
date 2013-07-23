@@ -1,4 +1,7 @@
-Ubercart
-========
-
-Módulo de integração para Drupal/Ubercart
+Módulo de integração PagSeguro para Ubercart
+============================================
+---
+Descrição
+---------
+---
+WIP
