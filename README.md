@@ -1,5 +1,5 @@
-Módulo de integração PagSeguro para Ubercart
-============================================
+Módulo de integração para WordPress/WP e-Commerce
+=================================================
 ---
 Descrição
 ---------
