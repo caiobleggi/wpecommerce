@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain
+END
+PagSeguroPhone.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroPhone.class.php
+END
+PagSeguroPaymentMethodCode.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroPaymentMethodCode.class.php
+END
+PagSeguroTransactionSearchResult.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroTransactionSearchResult.class.php
+END
+PagSeguroAccountCredentials.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroAccountCredentials.class.php
+END
+PagSeguroDocument.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroDocument.class.php
+END
+PagSeguroPaymentMethod.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroPaymentMethod.class.php
+END
+PagSeguroSenderDocument.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroSenderDocument.class.php
+END
+PagSeguroSender.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroSender.class.php
+END
+PagSeguroPaymentMethodType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroPaymentMethodType.class.php
+END
+PagSeguroMetaData.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroMetaData.class.php
+END
+PagSeguroParameter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroParameter.class.php
+END
+PagSeguroShipping.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroShipping.class.php
+END
+PagSeguroShippingType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroShippingType.class.php
+END
+PagSeguroHttpStatus.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroHttpStatus.class.php
+END
+PagSeguroTransaction.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroTransaction.class.php
+END
+PagSeguroAddress.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroAddress.class.php
+END
+PagSeguroPaymentRequest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroPaymentRequest.class.php
+END
+PagSeguroTransactionType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroTransactionType.class.php
+END
+PagSeguroNotificationType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroNotificationType.class.php
+END
+PagSeguroError.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroError.class.php
+END
+PagSeguroTransactionStatus.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroTransactionStatus.class.php
+END
+PagSeguroMetaDataItemKeys.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroMetaDataItemKeys.class.php
+END
+PagSeguroCredentials.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroCredentials.class.php
+END
+PagSeguroItem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroItem.class.php
+END
+PagSeguroParameterItem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroParameterItem.class.php
+END
+PagSeguroMetaDataItem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroMetaDataItem.class.php
+END
+PagSeguroDocuments.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroDocuments.class.php
+END
+PagSeguroCurrencies.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroCurrencies.class.php
+END
+PagSeguroTransactionSummary.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/domain/PagSeguroTransactionSummary.class.php
+END
