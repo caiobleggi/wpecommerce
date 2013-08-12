@@ -17,6 +17,7 @@ limitations under the License.
 ************************************************************************
 */
 
+
 require_once 'classes/model.php';
 
 /**
@@ -72,6 +73,7 @@ class notification extends wpsc_merchant{
     * @return array
     */
    function init($_POST){
+
        $this->load();
        $this->validatePost($_POST);
        $this->createCredential();
@@ -94,7 +96,7 @@ class notification extends wpsc_merchant{
    * validete if the post is empty
    */
    function validatePost($_POST){
-        $this->notification_type = 'transaction';// (isset($_POST['notificationType']) && trim($_POST['notificationType']) != "") ? trim($_POST['notificationType']) : NULL;
+        $this->notification_type = (isset($_POST['notificationType']) && trim($_POST['notificationType']) != "") ? trim($_POST['notificationType']) : NULL;
         $this->notification_code = (isset($_POST['notificationCode']) && trim($_POST['notificationCode']) != "") ? trim($_POST['notificationCode']) : NULL;
     }
     
@@ -117,8 +119,9 @@ class notification extends wpsc_merchant{
      * Transaction
      */
     function createTransaction(){
-         $this->_obj_transaction = PagSeguroNotificationService::checkTransaction($this->_obj_credentials, $this->notification_code);
-         $this->reference       = $this->_obj_transaction->getReference();
+	     include_once('PagSeguroLibrary/PagSeguroLibrary.php');
+            $this->_obj_transaction = PagSeguroNotificationService::checkTransaction($this->_obj_credential, $this->notification_code);         
+            $this->reference       = $this->_obj_transaction->getReference();
     }
     
     /**

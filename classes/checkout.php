@@ -195,8 +195,24 @@ class checkout extends wpsc_merchant{
         $shipping = new PagSeguroShipping();
         $shipping->setAddress($this->address());
         $shipping->setType($this->shippingType());
-        $shipping->setCost(number_format($this->_infoItem->extrainfo->base_shipping,2,'.','.'));        
+        $shipping->setCost(number_format( ($this->_infoItem->extrainfo->base_shipping + $this->extraShipping() ),2,'.','.'));        
         return $shipping;
+    }
+    
+    /**
+     * Extra shipping
+     * @return number
+     */
+    function extraShipping(){
+        
+        $cost = 0;
+        
+        foreach ($this->_infoItem->allcartcontent as $pnp ){
+            
+            if( $pnp->pnp != null && $pnp->pnp > 0 )
+                $cost = $cost + $pnp->pnp;
+        }
+        return $cost;
     }
     
     /**
@@ -232,7 +248,7 @@ class checkout extends wpsc_merchant{
         try {
             $this->_urlPagSeguro = $paymentRequest->register($this->_credential);
         } catch (Exception $exc) {
-            die($exc);
+            $this->_urlPagSeguro = '';
         }
     }
     

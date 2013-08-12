@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/utils
+/uol-fila-pagseguro/!svn/ver/526/trunk/fontes/wpecommerce/PagSeguroLibrary/utils
 END
 PagSeguroXmlParser.class.php
 K 25
@@ -13,5 +13,5 @@ PagSeguroHttpConnection.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 114
-/uol-fila-pagseguro/!svn/ver/511/trunk/fontes/wpecommerce/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php
+/uol-fila-pagseguro/!svn/ver/526/trunk/fontes/wpecommerce/PagSeguroLibrary/utils/PagSeguroHttpConnection.class.php
 END

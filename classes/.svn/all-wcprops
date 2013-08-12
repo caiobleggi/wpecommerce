@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/uol-fila-pagseguro/!svn/ver/512/trunk/fontes/wpecommerce/classes
+/uol-fila-pagseguro/!svn/ver/525/trunk/fontes/wpecommerce/classes
 END
 model.php
 K 25
@@ -19,5 +19,5 @@ checkout.php
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/uol-fila-pagseguro/!svn/ver/512/trunk/fontes/wpecommerce/classes/checkout.php
+/uol-fila-pagseguro/!svn/ver/525/trunk/fontes/wpecommerce/classes/checkout.php
 END

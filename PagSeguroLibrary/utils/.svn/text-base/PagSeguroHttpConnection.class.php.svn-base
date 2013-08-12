@@ -60,13 +60,12 @@ class PagSeguroHttpConnection
     }
 
     public function get($url, $timeout = 20, $charset = 'ISO-8859-1')
-    {
+    {	
         return $this->curlConnection('GET', $url, null, $timeout, $charset);
     }
 
-    private function curlConnection($method, $url, array $data, $timeout, $charset)
+    private function curlConnection($method, $url, array $data = null, $timeout, $charset)
     {
-
         if (strtoupper($method) === 'POST') {
             $postFields = ($data ? http_build_query($data, '', '&') : "");
             $contentLength = "Content-length: " . strlen($postFields);

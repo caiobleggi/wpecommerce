@@ -30,7 +30,7 @@ limitations under the License.
  * Variables of information of gateways
  */
 $nzshpcrt_gateways[$num]['name'] =  'PagSeguro Oficial';
-$nzshpcrt_gateways[$num]['image'] = WP_PLUGIN_URL . '/wp-e-commerce-akatus-gateway/images/ps-logo.png';
+$nzshpcrt_gateways[$num]['image'] = WP_PLUGIN_URL . '/wpecommerce/images/ps-logo.png';
 $nzshpcrt_gateways[$num]['internalname'] = 'pagseguro';
 $nzshpcrt_gateways[$num]['form'] = "form_pagseguro";
 $nzshpcrt_gateways[$num]['submit_function'] = "submit_pagseguro";
@@ -43,6 +43,10 @@ require_once( WP_PLUGIN_DIR . '/wp-e-commerce/wpsc-includes/merchant.class.php' 
 require_once('classes/form.php');
 require_once('classes/checkout.php');
 require_once('PagSeguroLibrary/PagSeguroLibrary.php');
+require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-core/wpsc-functions.php');
+require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-includes/merchant.class.php');
+require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-includes/purchaselogs.class.php');
+require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-theme/functions/wpsc-transaction_results_functions.php');
 
 /**
  * Create form admin
@@ -127,7 +131,7 @@ function notification_pagseguro(){
    
         $notification =  new notification();
         $array_notification = $notification->init($_POST);
-   
+
         if( $array_notification['status'] > 0 )
            $wpdb->query( 'UPDATE ' . WPSC_TABLE_PURCHASE_LOGS . ' SET processed = "'.$wpdb->escape( $array_notification['status'] ).'" WHERE id = "' . $wpdb->escape( $array_notification['reference'] ) . '" LIMIT 1' );
         }
