@@ -65,6 +65,7 @@ class checkout extends wpsc_merchant{
     function __construct() {
         global $wpsc_cart;
         
+		$this->activeLog();
         $this->set_api_version();
         $this->set_cms_version();
         
@@ -77,6 +78,13 @@ class checkout extends wpsc_merchant{
                 $this->redirect();
             else 
                 $this->error();
+    }
+	
+	/**
+     * Active log.
+     */
+    function activeLog(){
+        PagSeguroConfig::activeLog(ABSPATH.get_option('ps_directory').'/PagSeguro.log');
     }
         
     /**
