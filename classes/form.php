@@ -135,8 +135,8 @@ class Form{
             $this->close_td
                 $this->open_td
                     <select id="ps_charset" name="ps_charset">
-                        <option value="1" {$this->selected_charset['iso']}>ISO-8859-1</option>
-                        <option value="2" {$this->selected_charset['utf']}>UTF-8</option>
+                        <option value="1" {$this->selected_charset['utf']}>UTF-8</option>
+                        <option value="2" {$this->selected_charset['iso']}>ISO-8859-1</option>
                     </select>
                     $this->open_class_description{$this->properties['charset']['info_charset']}$this->close_class_description    
                 $this->close_td
@@ -175,7 +175,7 @@ EOF;
         return array(
             "email" => array(
                 "lbl_email" => __( 'E-Mail' ),
-                "info_email" => __( 'Do not have a PagSeguro account? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=10&tipo=cadastro#!vendedor" target="_blank">Click here </a> and register for free.' ), 
+                "info_email" => __( 'Do not have a PagSeguro account? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=12&tipo=cadastro#!vendedor" target="_blank">Click here </a> and register for free.' ), 
                 "value" => get_option('ps_email')
             ),
             "token" => array(
@@ -217,8 +217,8 @@ EOF;
     private function selected_checked(){
         
         $this->selected_charset = array(
-            'iso' => (get_option('ps_charset') == 1 || get_option('ps_charset') == '') ? "selected='selected'" : '',
-            'utf' => (get_option('ps_charset') == 2) ? "selected='selected'" : ''
+            'utf' => (get_option('ps_charset') == 1 || get_option('ps_charset') == '') ? "selected='selected'" : '',
+            'iso' => (get_option('ps_charset') == 2) ? "selected='selected'" : ''
         );
         
         $this->checked_log = array(

@@ -65,7 +65,7 @@ class checkout extends wpsc_merchant{
     function __construct() {
         global $wpsc_cart;
         
-		$this->activeLog();
+	$this->activeLog();
         $this->set_api_version();
         $this->set_cms_version();
         
@@ -108,14 +108,13 @@ class checkout extends wpsc_merchant{
     function generatePagSeguroPaymentRequestObject(){
         
         $paymentRequest = new PagSeguroPaymentRequest();
-        
         $paymentRequest->setCurrency(PagSeguroCurrencies::getIsoCodeByName("REAL"));
         $paymentRequest->setExtraAmount($this->extraAmount());
         $paymentRequest->setRedirectURL($this->redirectURL());
         $paymentRequest->setNotificationURL($this->notificationURL());
         $paymentRequest->setItems($this->items());
         $paymentRequest->setSender($this->sender());
-        $paymentRequest->setShipping($this->shipping());
+        $paymentRequest->setShipping($this->shipping());        
         return $paymentRequest;
     }
     
@@ -126,12 +125,14 @@ class checkout extends wpsc_merchant{
      */
     function extraAmount(){
         global $wpsc_cart;
-        $extra_amount = 0;
-        
-        if( $wpsc_cart->coupons_amount > 0 )
-            $extra_amount = $wpsc_cart->coupons_amount * -1;
+        if( $this->_infoItem->extrainfo->wpec_taxes_total > 0 && $wpsc_cart->coupons_amount > 0)
+            return number_format( ($this->_infoItem->extrainfo->wpec_taxes_total - $wpsc_cart->coupons_amount) ,2,'.','.');
+        else if( $this->_infoItem->extrainfo->wpec_taxes_total > 0 )
+            return number_format( $this->_infoItem->extrainfo->wpec_taxes_total ,2,'.','.');
+        else if( $wpsc_cart->coupons_amount > 0 )
+            return number_format( ($wpsc_cart->coupons_amount * -1) ,2,'.','.');
 
-        return number_format($extra_amount,2,'.','.');
+        return 0;
     }
     
     /**
@@ -141,8 +142,8 @@ class checkout extends wpsc_merchant{
      function redirectURL(){
       $url = home_url().'/?page_id=6&sessionid='.$this->_infoItem->extrainfo->sessionid;
         
-        if(get_option('ps_notification') != null && get_option('ps_notification') != '')
-            $url = get_option ('ps_notification');
+        if(get_option('ps_redirect') != null && get_option('ps_redirect') != '')
+            $url = get_option ('ps_redirect');
         
         return $url;
     }

@@ -29,8 +29,8 @@ limitations under the License.
 /**
  * Variables of information of gateways
  */
-$nzshpcrt_gateways[$num]['name'] =  'PagSeguro Oficial';
-$nzshpcrt_gateways[$num]['image'] = WP_PLUGIN_URL . '/wpecommerce/images/ps-logo.png';
+$nzshpcrt_gateways[$num]['name'] =  'PagSeguro';
+$nzshpcrt_gateways[$num]['image'] = '';
 $nzshpcrt_gateways[$num]['internalname'] = 'pagseguro';
 $nzshpcrt_gateways[$num]['form'] = "form_pagseguro";
 $nzshpcrt_gateways[$num]['submit_function'] = "submit_pagseguro";
