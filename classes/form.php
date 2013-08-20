@@ -18,6 +18,7 @@ limitations under the License.
 ************************************************************************
 */
 
+
 /**
  * Class Form
  */
@@ -85,8 +86,8 @@ class Form{
         
         $this->properties = $this->properties();
         
-        $yes = __( 'Yes' );
-        $no  = __( 'No' );
+        $yes = Message::lbl_yes();
+        $no  = Message::lbl_no();
                
      	return <<<EOF
          $this->open_tr 
@@ -111,7 +112,7 @@ class Form{
             
         $this->open_tr 
             $this->open_td
-                <label for="ps_redirect"> {$this->properties['redirect']['lbl_redirect']} :</label>
+                <label for="ps_redirect"> {$this->properties['redirect']['lbl_redirect']}:</label>
             $this->close_td
                 $this->open_td
                     <input type="text" name="ps_redirect" id="ps_redirect" value="{$this->properties['redirect']['value']}">
@@ -174,38 +175,38 @@ EOF;
         
         return array(
             "email" => array(
-                "lbl_email" => __( 'E-Mail' ),
-                "info_email" => __( 'Do not have a PagSeguro account? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=12&tipo=cadastro#!vendedor" target="_blank">Click here </a> and register for free.' ), 
+                "lbl_email" => Message::$lbl_email,
+                "info_email" => Message::info_account(),
                 "value" => get_option('ps_email')
             ),
             "token" => array(
-                "lbl_token" => __( 'Token' ),
-                "info_token" => __( 'Do not have or do not know your token? <a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml" target="_blank">Click here </a> to generate a new one.' ),
+                "lbl_token" => Message::$lbl_token,
+                "info_token" => Message::not_token(),
                 "value" => get_option('ps_token')
             ),
             "redirect" => array(
-                "lbl_redirect" => __( 'Redirect URL' ),
-                "info_redirect" => __( 'Your customer will be redirected back to your store or to the URL entered in this field. <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml" target="_blank">Click here </a> to activate.' ),
+                "lbl_redirect" => Message::lbl_redirect(),
+                "info_redirect" => Message::redirected_store(),
                 "value" => get_option('ps_redirect')
             ),
             "notification" => array(
-                "lbl_notification" => __( 'Notification URL' ),
-                "info_notification" => __( 'Whenever a transaction change its status, PagSeguro sends a notification to your store or to the URL entered in this field.' ),
+                "lbl_notification" => Message::lbl_notification(),
+                "info_notification" => Message::notification_store(),
                 "value" => ( get_option('ps_notification') != null && get_option('ps_notification') != '' ) ? get_option('ps_notification') : home_url().'/index.php?notificationurl=true'
             ),
              "charset" => array(
-                "lbl_charset" => __( 'Charset' ),
-                "info_charset" => __( 'Set the charset according to the coding of your system.' ),
+                "lbl_charset" => Message::$lbl_charset,
+                "info_charset" => Message::set_charset(),
                 "value" => get_option('ps_charset')
             ),
             "log" => array(
-                "lbl_log" => __( 'Log' ),
-                "info_log" => __( 'Create log file?' ),
+                "lbl_log" => Message::$lbl_log,
+                "info_log" => Message::log_file(),
                 "value" => get_option('ps_log')
             ),
             "directory" => array(
-                "lbl_directory" => __( 'Directory' ),
-                "info_directory" => __( 'Path to the log file.' ),
+                "lbl_directory" => Message::lbl_directory(),
+                "info_directory" => Message::path_log(),
                 "value" => get_option('ps_directory')
             ),
         );

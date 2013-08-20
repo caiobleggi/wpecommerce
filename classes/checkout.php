@@ -65,7 +65,7 @@ class checkout extends wpsc_merchant{
     function __construct() {
         global $wpsc_cart;
         
-	$this->activeLog();
+	    $this->activeLog();
         $this->set_api_version();
         $this->set_cms_version();
         
@@ -276,7 +276,7 @@ class checkout extends wpsc_merchant{
      * Display message error.
      */
     function error(){
-     $this->set_error_message(__('Sorry, unfortunately there was an error during checkout. Please contact the store administrator if the problem persists.'));
+     $this->set_error_message(Message::error());
      $this->return_to_checkout();
      exit();
     }

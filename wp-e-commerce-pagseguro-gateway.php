@@ -41,12 +41,15 @@ $nzshpcrt_gateways[$num]['display_name'] = 'PagSeguro';
 
 require_once( WP_PLUGIN_DIR . '/wp-e-commerce/wpsc-includes/merchant.class.php' );
 require_once('classes/form.php');
+require_once 'languages/Message.php';
 require_once('classes/checkout.php');
 require_once('PagSeguroLibrary/PagSeguroLibrary.php');
 require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-core/wpsc-functions.php');
 require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-includes/merchant.class.php');
 require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-includes/purchaselogs.class.php');
 require_once(realpath(dirname(dirname(__FILE__))) . '/wp-e-commerce/wpsc-theme/functions/wpsc-transaction_results_functions.php');
+
+
 
 /**
  * Create form admin
