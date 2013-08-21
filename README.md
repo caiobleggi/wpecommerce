@@ -16,7 +16,7 @@ Com o módulo instalado e configurado, você pode pode oferecer o PagSeguro como
 ---
  - [WordPress] 3.5.2
  - [WPeCommerce] 3.8.12.1
- - [PHP] 5.3.9+
+ - [PHP] 5.1.6+
  - [SPL]
  - [cURL]
  - [DOM]
