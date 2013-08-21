@@ -27,26 +27,23 @@ Com o módulo instalado e configurado, você pode pode oferecer o PagSeguro como
 ---
  - Certifique-se de que não há instalação de outros módulos para o PagSeguro em seu sistema;
  - Baixe o repositório como arquivo zip ou faça um clone;
- - No menu da pagina de administrador vá em Plugins-> Add New em Upload e selecione o zip do módulo do PagSeguro para fazer a instalação no WordPress, após a instação selecione a opção Active. Esta instalação não afetará nenhum arquivo do seu sistema, somente adicionará os arquivos do módulo PagSeguro;
- - Certifique-se de que as permissões das pastas e arquivos recém copiados sejam, respectivamente, definidas como 755 e 644;
+ - Extraia o conteúdo do arquivo baixado e em seguida, na área administrativa de seu WordPress, acesse o menu Plugins -> Adicionar Novo -> Enviar -> aponte para o caminho do arquivo wpecpagseguro.zip e selecione Instalar Agora;
+ - Após a instação selecione a opção Ativar plugin;
  
  
  Configuração
 ------------
 ---
-Para acessar e configurar o módulo acesse o menu WPeCommerce -> Settings -> Store -> Payments -> PagSeguro Oficial[settings]. As opções disponíveis estão descritas abaixo.
+Para configurar o módulo acesse, na área administrativa de seu WordPress, o menu Configurações -> Loja -> Pagamentos. Marque o PagSeguro como "Ativo" e em seguida clique em Configurações. As opções disponíveis estão descritas abaixo.
 
- - **Enable/Disable**: ativa/desativa o módulo.
- - **Title**: Titulo a ser exibida na tela de Pagamento.
- - **Description**: Descrição a ser exibida na tela de Pagamento.
- - **Email**: email gerado no PagSeguro.
+ - **Display Name**: Título a ser exibida na tela de Pagamento.
+ - **E-Mail**: email cadastrado no PagSeguro.
  - **Token**: token gerado no PagSeguro.
- - **Url Redirect**: ao final do fluxo de pagamento no PagSeguro, seu cliente será redirecionado automaticamente para a página de confirmação em sua loja ou então para a URL que você informar neste campo. Para ativar o redirecionamento ao final do pagamento é preciso ativar o serviço de [Pagamentos via API]. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje que seus clientes sejam redirecionados para outro local.
- - **Url Notification**: sempre que uma transação mudar de status, o PagSeguro envia uma notificação para sua loja ou para a URL que você informar neste campo. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje receber as notificações em outro local.
- - **Invoice Prefix**: Prefixo para controle das transações realizadas com o PagSeguro.
+ - **Redirect URL**: ao final do fluxo de pagamento no PagSeguro, seu cliente será redirecionado automaticamente para a página de confirmação em sua loja ou então para a URL que você informar neste campo. Para ativar o redirecionamento ao final do pagamento é preciso ativar o serviço de [Pagamentos via API]. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje que seus clientes sejam redirecionados para outro local.
+ - **Notification URL**: sempre que uma transação mudar de status, o PagSeguro envia uma notificação para sua loja ou para a URL que você informar neste campo. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje receber as notificações em outro local.
  - **Charset**: codificação do seu sistema (ISO-8859-1 ou UTF-8).
- - **Debug Log**: ativa/desativa a geração de logs.
- - **diretório**: informe o local a partir da raíz de instalação do WordPress onde se deseja criar o arquivo de log. Ex.: /logs. Caso não informe nada, o log será gravado dentro da pasta ../PagSeguroLibrary/PagSeguro.log.
+ - **Log**: ativa/desativa a geração de logs.
+ - **Directory**: informe o local a partir da raíz de instalação do WordPress onde se deseja criar o arquivo de log. Ex.: /logs. Caso não informe nada, o log será gravado dentro da pasta ../PagSeguroLibrary/PagSeguro.log.
 
 
  Changelog
