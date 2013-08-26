@@ -33,7 +33,7 @@ class Message
      * Message to be displayed if any errors were launched by PagSeguro
      */
     private static $error_en = 'Sorry, unfortunately there was an error during checkout. Please contact the store administrator if the problem persists.';
-    private static $error_br = 'Desculpe, infelizmente ocorreu um erro durante a finalização da compra. Por favor entre em contato com o administrador da loja se o problema persistir.';
+    private static $error_br = 'Desculpe, infelizmente ocorreu um erro durante a finaliza&ccedil;&atilde;o da compra. Por favor entre em contato com o administrador da loja se o problema persistir.';
 
     /**
      * /Method info_account
@@ -41,7 +41,7 @@ class Message
      */
     public static $lbl_email = 'E-Mail';
     private static $info_account_en = 'Do not have a PagSeguro account? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=12&tipo=cadastro#!vendedor" target="_blank">Click here </a> and register for free.';
-    private static $info_account_br = 'Não tem conta no PagSeguro? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=12&tipo=cadastro#!vendedor" target="_blank">Clique aqui </a> e registre-se gratuitamente.';
+    private static $info_account_br = 'N&atilde;o tem conta no PagSeguro? <a href="https://pagseguro.uol.com.br/registration/registration.jhtml?ep=12&tipo=cadastro#!vendedor" target="_blank">Clique aqui </a> e registre-se gratuitamente.';
 
     /**
      * /Method path_log
@@ -64,7 +64,7 @@ class Message
      */
     public static $lbl_charset = 'Charset';
     private static $set_charset_en = 'Set the charset according to the coding of your system.';
-    private static $set_charset_br = 'Definir o charset de acordo com a codificação do seu sistema.';
+    private static $set_charset_br = 'Definir o charset de acordo com a codifica&ccedil;&atilde;o do seu sistema.';
 
     /**
      * /Method not_token
@@ -72,21 +72,21 @@ class Message
      */
     public static $lbl_token = 'Token';
     private static $not_token_en = 'Do not have or do not know your token? <a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml" target=\"_blank\">Click here </a> to generate a new one.';
-    private static $not_token_br = 'Não tem ou não sabe o seu token? <a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml" target=\"_blank\">Clique aqui </a> para gerar um novo.';
+    private static $not_token_br = 'N&atilde;o tem ou n&atilde;o sabe o seu token? <a href="https://pagseguro.uol.com.br/integracao/token-de-seguranca.jhtml" target=\"_blank\">Clique aqui </a> para gerar um novo.';
 
     /**
      * /Method redirected_store
      * @var string
      */
     private static $redirected_store_en = 'Your customer will be redirected back to your store or to the URL entered in this field. <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml" target=\"_blank\">Click here </a> to activate.';
-    private static $redirected_store_br = 'Seu cliente será redirecionado para sua loja ou para a URL inserida neste campo. <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml" target=\"_blank\">Clique aqui </a> para ativar.';
+    private static $redirected_store_br = 'Seu cliente ser&aacute; redirecionado para sua loja ou para a URL inserida neste campo. <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml" target=\"_blank\">Clique aqui </a> para ativar.';
 
     /**
      * /Method notification_store
      * @var string
      */
     private static $notification_store_en = 'Whenever a transaction change its status, PagSeguro sends a notification to your store or to the URL entered in this field.';
-    private static $notification_store_br = 'Sempre que uma transação mudar de status, o PagSeguro envia uma notificação para sua loja ou para a URL inserida neste campo.';
+    private static $notification_store_br = 'Sempre que uma transa&ccedil;&atilde;o mudar de status, o PagSeguro envia uma notifica&ccedil;&atilde;o para sua loja ou para a URL inserida neste campo.';
 
     /**
      * /Method lbl_redirect
@@ -100,14 +100,14 @@ class Message
      * @var string
      */
     private static $lbl_notification_en = 'Notification URL';
-    private static $lbl_notification_br = 'URL de Notificação';
+    private static $lbl_notification_br = 'URL de Notifica&ccedil;&atilde;o';
 
     /**
      * /Method lbl_directory
      * @var string
      */
     private static $lbl_directory_en = 'Directory';
-    private static $lbl_directory_br = 'Diretório';
+    private static $lbl_directory_br = 'Diret&oacute;rio';
 
     /**
      * Method lbl_yes
@@ -121,7 +121,7 @@ class Message
      * @var string
      */
     private static $lbl_no_en = 'No';
-    private static $lbl_no_br = 'Não';
+    private static $lbl_no_br = 'N&atilde;o';
 
     /**
      * Error

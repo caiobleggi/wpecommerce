@@ -66,7 +66,7 @@ class checkout extends wpsc_merchant
     function __construct()
     {
         global $wpsc_cart;
-
+        
         $this->activeLog();
         $this->set_api_version();
         $this->set_cms_version();
@@ -150,7 +150,7 @@ class checkout extends wpsc_merchant
      */
     function redirectURL()
     {
-        $url = home_url() . '/?page_id=6&sessionid=' . $this->_infoItem->extrainfo->sessionid;
+        $url = get_option( 'transact_url' ).'&sessionid=' . $this->_infoItem->extrainfo->sessionid;
 
         if (get_option('ps_redirect') != null && get_option('ps_redirect') != '')
             $url = get_option('ps_redirect');
