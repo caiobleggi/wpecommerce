@@ -50,6 +50,9 @@ Para configurar o módulo acesse, na área administrativa de seu WordPress, o me
 Changelog
 ---------
 ---
+1.1
+- Correção: cannot re-assign auto-global variable _POST
+
 1.0
 
 - Versão inicial. Integração com API de checkout e API de notificações.
