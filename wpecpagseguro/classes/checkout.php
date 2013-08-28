@@ -27,7 +27,7 @@ class checkout extends wpsc_merchant
      * Version Api
      * @var type int
      */
-    private $api_version = '1.0';
+    private $api_version = '1.1';
 
     /**
      * Version WP e-Commerce.
