@@ -26,13 +26,13 @@ class notification extends wpsc_merchant
 {
 
     /**
-     * $_POST['notificationType']
+     * $post_notification['notificationType']
      * @var string
      */
     private $notification_type;
 
     /**
-     * $_POST['notificationCode']
+     * $post_notification['notificationCode']
      * @var string
      */
     private $notification_code;
@@ -69,14 +69,14 @@ class notification extends wpsc_merchant
 
     /**
      * Init Notification
-     * @param type $_POST
+     * @param type $post_notification
      * @return array
      */
-    function init($_POST)
+    function init($post_notification)
     {
 
         $this->load();
-        $this->validatePost($_POST);
+        $this->validatePost($post_notification);
         $this->createCredential();
         $this->createNotificationType();
 
@@ -97,10 +97,10 @@ class notification extends wpsc_merchant
     /**
      * validete if the post is empty
      */
-    function validatePost($_POST)
+    function validatePost($post_notification)
     {
-        $this->notification_type = (isset($_POST['notificationType']) && trim($_POST['notificationType']) != "") ? trim($_POST['notificationType']) : NULL;
-        $this->notification_code = (isset($_POST['notificationCode']) && trim($_POST['notificationCode']) != "") ? trim($_POST['notificationCode']) : NULL;
+        $this->notification_type = (isset($post_notification['notificationType']) && trim($post_notification['notificationType']) != "") ? trim($post_notification['notificationType']) : NULL;
+        $this->notification_code = (isset($post_notification['notificationCode']) && trim($post_notification['notificationCode']) != "") ? trim($post_notification['notificationCode']) : NULL;
     }
 
     /**

@@ -134,11 +134,12 @@ function notification_pagseguro()
 {
     global $wpdb;
     require_once "wp-e-commerce-pagseguro-notification.php";
+    $post_notification = $_POST;
 
-    if (isset($_REQUEST['notificationurl']) && $_REQUEST['notificationurl'] == "true" && isset($_POST)) {
+    if (isset($_REQUEST['notificationurl']) && $_REQUEST['notificationurl'] == "true" && isset($post_notification)) {
 
         $notification = new notification();
-        $array_notification = $notification->init($_POST);
+        $array_notification = $notification->init($post_notification);
 
         if ($array_notification['status'] > 0)
             $wpdb->query('UPDATE ' . WPSC_TABLE_PURCHASE_LOGS . ' SET processed = "' . $wpdb->escape($array_notification['status']) . '" WHERE id = "' . $wpdb->escape($array_notification['reference']) . '" LIMIT 1');
