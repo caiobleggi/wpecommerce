@@ -36,3 +36,9 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+#################
+## Sonar
+#################
+.sonar/
+sonar-project.properties
