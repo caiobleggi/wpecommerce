@@ -205,7 +205,7 @@ class checkout extends wpsc_merchant
         $sender = new PagSeguroSender();
         $sender->setEmail(str_replace(" ", "", $this->_infoItem->userinfo['billingemail']['value']));
         $sender->setName($this->_infoItem->userinfo['billingfirstname']['value'] . ' ' . $this->_infoItem->userinfo['billinglastname']['value']);
-        $sender->setPhone(substr($this->_infoItem->userinfo['billingphone']['value'], 0, 2), substr($this->_infoItem->userinfo['billingphone']['value'], 2));
+        $sender->setPhone(floatval(preg_replace('/[^A-Za-z0-9]/', "", $this->_infoItem->userinfo['billingphone']['value'])));
         return $sender;
     }
 
